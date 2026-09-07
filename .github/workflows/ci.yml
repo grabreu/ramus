@@ -17,7 +17,7 @@ concurrency:
 
 jobs:
   format:
-    name: Format & Lint
+    name: Format
     runs-on: ubuntu-latest
 
     steps:
