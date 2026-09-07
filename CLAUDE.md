@@ -19,7 +19,11 @@ Read `README.md` before making changes — it documents the actual public CLI (u
 
 ## Source
 
-No source code yet — package layout and entry point are still to be scaffolded.
+- `src/ramus/walker.py` - `walk`/`Entry`: recursive directory traversal with hidden/exclude/pattern/dirs-only filtering and sorting.
+- `src/ramus/render.py` - `render`: turns walked entries into tree-style lines (box-drawing glyphs, full-path mode, summary footer).
+- `src/ramus/cli.py` - Typer app: option parsing (`-L`/`-I`/`-P`/`-a`/`-d`/`-f`), wires `walker` → `render` → stdout, forces UTF-8 stdout so tree glyphs don't crash on legacy Windows codepages.
+
+Every function/class should have matching coverage in `tests/`.
 
 ## Validation
 

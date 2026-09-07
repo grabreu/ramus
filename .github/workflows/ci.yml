@@ -31,7 +31,7 @@ jobs:
           enable-cache: true
 
       - name: Install
-        run: uv sync --all-extras --dev
+        run: uv sync --dev
 
       - name: Verify formatting
         run: uv run ruff format --check .
@@ -54,7 +54,7 @@ jobs:
           enable-cache: true
 
       - name: Install
-        run: uv sync --all-extras --dev
+        run: uv sync --dev
 
       - name: Typecheck
         run: uv run mypy .
