@@ -9,7 +9,7 @@ description = "Cross-platform tree/find-style CLI for exploring directory struct
 readme = "README.md"
 requires-python = ">=3.11"
 license = "MIT"
-authors = [{ name = "Gabriel Abreu" }]
+authors = [{ name = "Gabriel Abreu (@grabreu)" }]
 keywords = ["cli", "tree", "find", "directory", "filesystem"]
 classifiers = [
     "Environment :: Console",
