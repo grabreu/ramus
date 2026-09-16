@@ -11,6 +11,10 @@ A cross-platform `tree`/`find`-style CLI for exploring directory structures.
 pip install ramus
 ```
 
+## Tech stack
+
+Python · Typer · Ruff · mypy · pytest · uv
+
 ## Why
 
 Windows' built-in `tree` command only supports `/F` (list files) and `/A` (ASCII characters) — no depth limit, no filtering, nothing else. Linux's `tree`/`find` cover that gap; ramus brings the same behavior to a `pip install`-able package.
@@ -63,7 +67,9 @@ uv run ruff check .
 uv run mypy .
 ```
 
-Releases (versioning, changelog, and PyPI publish) are automated via [release-please](https://github.com/googleapis/release-please) in CD.
+## Deployment
+
+Versioning, changelog, and PyPI publish are automated by [release-please](https://github.com/googleapis/release-please): merges to `main` update a release PR from Conventional Commits, and merging that PR tags the release and publishes to PyPI via GitHub Actions, using trusted publishing (OIDC — no stored API token).
 
 ## License
 
