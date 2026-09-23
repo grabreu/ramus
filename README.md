@@ -17,7 +17,7 @@ Python · Typer · Ruff · mypy · pytest · uv
 
 ## Why
 
-Windows' built-in `tree` command only supports `/F` (list files) and `/A` (ASCII characters) — no depth limit, no filtering, nothing else. Linux's `tree`/`find` cover that gap; ramus brings the same behavior to a `pip install`-able package.
+Windows' built-in `tree` command only supports `/F` (list files) and `/A` (ASCII characters), with no depth limit, no filtering, nothing else. Linux's `tree`/`find` cover that gap; ramus brings the same behavior to a `pip install`-able package.
 
 ```
 $ ramus
@@ -69,7 +69,7 @@ uv run mypy .
 
 ## Deployment
 
-Versioning, changelog, and PyPI publish are automated by [release-please](https://github.com/googleapis/release-please): merges to `main` update a release PR from Conventional Commits, and merging that PR tags the release and publishes to PyPI via GitHub Actions, using trusted publishing (OIDC — no stored API token).
+Versioning, changelog, and PyPI publish are automated by [release-please](https://github.com/googleapis/release-please): merges to `main` update a release PR from Conventional Commits, and merging that PR tags the release and publishes to PyPI via GitHub Actions, using trusted publishing (OIDC, no stored API token).
 
 ## License
 
